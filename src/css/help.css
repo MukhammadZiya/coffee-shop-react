@@ -1,0 +1,249 @@
+/* Main Layout */
+.help-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+	background: #d6cbbf;
+}
+
+.help-page .help-container {
+  margin: 50px auto;
+  flex-direction: row;
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 24px;
+}
+
+/* Navigation Menu */
+.help-page .help-menu {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid rgba(248, 248, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.help-page .help-menu .table-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Material UI Overrides */
+.help-page .css-1gsv261 {
+  width: 75%;
+}
+
+.help-page .css-heg063-MuiTabs-flexContainer {
+  justify-content: space-between;
+}
+
+.help-page .css-19kzrtu {
+  padding-top: 24px;
+}
+
+/* Main Content */
+.help-page .help-main-content {
+  width: 100%;
+  min-height: 1000px;
+  padding: 24px 0;
+}
+
+/* Rules Box */
+.help-page .rules-box {
+  padding: 32px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(248, 248, 255, 0.9);
+  border: 1px solid rgba(237, 237, 237, 0.8);
+  box-shadow: 0 20px 30px rgba(25, 25, 46, 0.04),
+              0 2px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.help-page .rules-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 35px rgba(25, 25, 46, 0.08);
+}
+
+.rules-box .rules-frame {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rules-box .rules-frame p {
+  border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+  color: #000000;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.00938em;
+  padding-bottom: 12px;
+  transition: color 0.2s ease;
+}
+
+.rules-box .rules-frame p:hover {
+  color: #140342;
+}
+
+/* Accordion Menu */
+.help-page .accordion-menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Admin Letter Box */
+.help-page .admin-letter-box {
+  padding: 60px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(248, 248, 255, 0.95);
+  border: 1px solid rgba(237, 237, 237, 0.8);
+  box-shadow: 0 20px 30px rgba(25, 25, 46, 0.04);
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.help-page .admin-letter-box:hover {
+  transform: translateY(-3px);
+}
+
+.help-page .admin-letter-box .admin-letter-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.help-page .admin-letter-container .admin-letter-frame {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.help-page .admin-letter-frame span {
+  font-family: "ABeeZee", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #140342;
+  letter-spacing: -0.02em;
+}
+
+.help-page .admin-letter-frame p {
+  margin-top: 20px;
+  font-family: "Sedan", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4f547b;
+}
+
+/* Form Elements */
+.help-page .admin-letter-frame .admin-input-box {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.help-page .admin-letter-frame .admin-input-box label {
+  font-family: "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #140342;
+}
+
+.help-page .admin-letter-frame .admin-input-box input,
+.help-page .admin-letter-frame .admin-input-box textarea {
+  margin-top: 8px;
+  padding: 16px 20px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(221, 221, 221, 0.8);
+  border-radius: 12px;
+  font-family: "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4f547b;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.help-page .admin-letter-frame .admin-input-box input {
+  height: 60px;
+}
+
+.help-page .admin-letter-frame .admin-input-box textarea {
+  height: 150px;
+  resize: vertical;
+  min-height: 150px;
+}
+
+.help-page .admin-letter-frame .admin-input-box input:focus,
+.help-page .admin-letter-frame .admin-input-box textarea:focus {
+  outline: none;
+  border-color: #140342;
+  box-shadow: 0 0 0 2px rgba(20, 3, 66, 0.1);
+  background: #ffffff;
+}
+
+/* Hover States */
+.help-page .admin-letter-frame .admin-input-box input:hover,
+.help-page .admin-letter-frame .admin-input-box textarea:hover {
+  border-color: #140342;
+  background: #ffffff;
+}
+
+/* Placeholder Styles */
+.help-page .admin-letter-frame .admin-input-box input::placeholder,
+.help-page .admin-letter-frame .admin-input-box textarea::placeholder {
+  color: #4f547b;
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .help-page .admin-letter-box {
+    padding: 30px;
+  }
+  
+  .help-page .admin-letter-frame span {
+    font-size: 20px;
+  }
+  
+  .help-page .admin-letter-frame .admin-input-box input,
+  .help-page .admin-letter-frame .admin-input-box textarea {
+    font-size: 14px;
+  }
+}

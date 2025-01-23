@@ -1,0 +1,460 @@
+.home-navbar {
+  width: 100%;
+  height: 850px;
+  display: flex;
+  background: url("/public/img/cofee.jpg");
+  background-size: cover;
+}
+
+.home-navbar .navbar-container {
+  margin-top: 55px;
+  height: 642px;
+}
+
+.home-navbar .navbar-container .menu {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-navbar .navbar-container .menu .brend-logo {
+  width: 80px;
+  height: 80px;
+  margin-left: 150px;
+}
+
+.home-navbar .navbar-container .menu .links {
+  min-width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-navbar .navbar-container .menu .login-button {
+  background: #3776cc;
+  color: #f8f8ff;
+}
+
+.home-navbar .navbar-container .menu .user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 24px;
+}
+
+.home-navbar a {
+  text-decoration: none;
+}
+
+.home-navbar .hover-line a {
+  color: #8b6914;
+  z-index: 100;
+}
+
+.home-navbar .underline {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #d7b686;
+}
+
+.home-navbar .hover-line::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #d7b686;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.home-navbar .hover-line:hover::after {
+  transform: scaleX(1);
+}
+
+.home-navbar div.hover-line::after {
+  transform-origin: 0% 50%;
+}
+
+.home-navbar .navbar-container .header-frame {
+  margin-top: 142px;
+  height: 462px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-navbar .navbar-container .header-frame .detail {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 500px;
+}
+
+.home-navbar .navbar-container .header-frame .detail .head-main-txt {
+  width: 450px;
+  height: 150px;
+
+  font-family: "Roboto Serif";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.75px;
+  color: #8b6914;
+}
+
+.home-navbar .navbar-container .header-frame .detail .wel-txt {
+  width: 510px;
+  height: 42px;
+
+  font-family: "Roboto Serif";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.75px;
+  color: #8b6914;
+}
+
+.home-navbar
+  .navbar-container
+  .header-frame
+  img[src="/img/turn-right-svgrepo-com.svg"] {
+  margin-top: 80px;
+  width: 50px;
+  height: 50px;
+  animation: slide-right 1.2s ease-in-out infinite;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.home-navbar .navbar-container .header-frame .detail .service-txt {
+  margin-top: 23px;
+  width: 153px;
+  height: 23px;
+
+  font-family: "Roboto Serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #d5d5d5;
+}
+
+.home-navbar .navbar-container .header-frame .detail .signup {
+  margin-top: 73px;
+  margin-left: 50px;
+}
+
+.home-navbar .navbar-container .header-frame .detail .signup-button {
+  width: 210px;
+  height: 60px;
+  border-radius: 4px;
+  background: #19add2;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: normal;
+  color: #f8f8ff;
+
+  /* Adding continuous animations */
+  animation: buttonFloat 2s ease-in-out infinite alternate,
+    glowing 3s ease-in-out infinite;
+
+  /* Basic styling */
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3);
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Floating animation */
+@keyframes buttonFloat {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Glowing effect animation */
+@keyframes glowing {
+  0% {
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3);
+  }
+  50% {
+    box-shadow: 0 2px 15px rgba(25, 118, 210, 0.6),
+      0 0 20px rgba(25, 118, 210, 0.3);
+  }
+  100% {
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3);
+  }
+}
+
+/* Click animation - still keep this for interaction */
+.home-navbar .navbar-container .header-frame .detail .signup-button:active {
+  animation-play-state: paused;
+  transform: translateY(1px);
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.2);
+}
+
+.home-navbar .navbar-container .logo-frame {
+  margin-top: 43px;
+  width: 690px;
+  height: 419px;
+}
+
+.home-navbar .navbar-container .logo-frame .logo-img {
+  width: 100%;
+  height: 100%;
+  /* background: url("/public/img/logo.webp"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: invert(15%);
+}
+
+.other-navbar {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  background: url("/public/img/cofee.jpg");
+  background-size: cover;
+}
+
+.other-navbar .navbar-container {
+  margin-top: 55px;
+}
+
+.other-navbar .navbar-container .menu {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other-navbar .navbar-container .menu .brend-logo {
+  width: 80px;
+  height: 80px;
+  margin-left: 150px;
+}
+
+.other-navbar .navbar-container .menu .links {
+  min-width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other-navbar .navbar-container .menu .login-button {
+  background: #3776cc;
+  color: #f8f8ff;
+}
+
+.other-navbar .navbar-container .menu .user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 24px;
+}
+
+.other-navbar a {
+  text-decoration: none;
+}
+
+.other-navbar .hover-line a {
+  color: #8b6914;
+  z-index: 100;
+}
+
+.other-navbar .underline {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #d7b686;
+}
+
+.other-navbar .hover-line::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #d7b686;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.other-navbar.hover-line:hover::after {
+  transform: scaleX(1);
+}
+
+.other-navbar div.hover-line::after {
+  transform-origin: 0% 50%;
+}
+
+/* BASKET */
+
+.basket-frame {
+  position: relative;
+  padding: 16px 12px 0px 12px;
+  width: 450px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: #d6cbbf;
+
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.basket-frame .all-check-box {
+  padding: 0px 12px;
+  width: 100%;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(to right, #f7f7f7, rgba(230, 229, 221, 0.699));
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 8px;
+}
+
+.basket-frame .basket-info-box {
+  position: relative;
+  margin: 8px 0;
+  padding: 12px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ffffff;
+
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.basket-info-box:hover {
+  transform: translateY(-2px);
+}
+
+.basket-info-box .product-img {
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(0px 4px 8px rgba(194, 128, 128, 0.15));
+  border-radius: 35px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.basket-info-box .product-img:hover {
+  transform: scale(1.05);
+}
+
+.basket-info-box .product-name {
+  margin-left: 16px;
+  width: 185px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #2c2c2c;
+}
+
+.basket-info-box .product-price {
+  width: 85px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #d32f2f;
+  transition: color 0.2s ease;
+}
+
+.basket-info-box .product-price:hover {
+  color: #f44336;
+}
+
+.basket-frame .cancel-btn {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.basket-frame .cancel-btn:hover {
+  opacity: 1;
+}
+
+.basket-frame .basket-order {
+  margin-top: 16px;
+  padding: 16px;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgb(252, 252, 252);
+  border-radius: 0 0 20px 20px;
+}
+
+.basket-order .price {
+  width: 200px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+.basket-frame .orders-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.basket-frame .orders-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.basket-frame .orders-wrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.basket-frame .orders-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.basket-frame .orders-main-wrapper {
+  position: relative;
+  margin-top: 12px;
+  width: 100%;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+}
